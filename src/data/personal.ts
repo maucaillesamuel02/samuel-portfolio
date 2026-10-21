@@ -6,7 +6,7 @@ export const personal = {
   description:
     "Full Stack Software Engineer specializing in C#, .NET, React, and TypeScript. Experienced in enterprise applications and collaborating with US-based engineering teams.",
   location: "Lima, Peru",
-  availability: "Open to Remote Opportunities",
+  availability: "Available for Remote Opportunities",
   email: "maucaillesamuel@gmail.com",
   linkedin:
     "https://www.linkedin.com/in/samuel-maucaille-54a63310b/",

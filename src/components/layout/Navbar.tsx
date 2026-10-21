@@ -64,25 +64,25 @@ export default function Navbar() {
       {/* Mobile navigation */}
       {menuOpen && (
         <div
-          id="mobile-navigation"
-          className="border-t border-border bg-surface px-6 py-6 md:hidden"
+            id="mobile-navigation"
+            className="absolute left-0 right-0 top-full border-t border-border bg-surface px-6 py-6 shadow-xl md:hidden"
         >
-          <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5">
             {[...links, { label: "Contact", href: "#contact" }].map(
-              (link) => (
+                (link) => (
                 <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-sm text-muted hover:text-accent"
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-sm text-muted transition-colors hover:text-accent"
                 >
-                  {link.label}
+                    {link.label}
                 </a>
-              )
+                )
             )}
-          </div>
+            </div>
         </div>
-      )}
+        )}
     </header>
   );
 }

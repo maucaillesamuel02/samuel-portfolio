@@ -1,4 +1,5 @@
 import { personal } from "@/data/personal";
+import { MapPin } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -10,11 +11,11 @@ export default function Hero() {
         Hi, my name is
       </p>
 
-      <h1 className="mb-4 text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+      <h1 className="mb-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
         {personal.name}.
       </h1>
 
-      <h2 className="mb-6 max-w-4xl text-4xl font-bold tracking-tight text-muted sm:text-5xl lg:text-6xl">
+      <h2 className="mb-6 max-w-4xl text-3xl font-bold tracking-tight text-muted sm:text-5xl lg:text-6xl">
         {personal.headline}
       </h2>
 
@@ -49,11 +50,20 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="mt-12 flex flex-wrap items-center gap-3 text-sm text-muted">
-        <span>📍 {personal.location}</span>
-        <span className="text-accent">•</span>
-        <span>{personal.availability}</span>
-      </div>
+        
+    <div className="mt-12 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-muted">
+        {/* Location */}
+        <div className="flex items-center gap-2">
+            <MapPin size={16} className="text-accent" />
+            <span>{personal.location}</span>
+        </div>
+
+        {/* Availability */}
+        <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-emerald-400" />
+            <span>{personal.availability}</span>
+        </div>
+        </div>
     </section>
   );
 }
