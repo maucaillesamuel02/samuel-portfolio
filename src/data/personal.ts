@@ -10,5 +10,5 @@ export const personal = {
   email: "maucaillesamuel@gmail.com",
   linkedin:
     "https://www.linkedin.com/in/samuel-maucaille-54a63310b/",
-  github: "", // Add your personal GitHub URL
+  github: "https://github.com/maucaillesamuel02", // Add your personal GitHub URL
 };
