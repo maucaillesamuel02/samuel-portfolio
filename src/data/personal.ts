@@ -11,4 +11,5 @@ export const personal = {
   linkedin:
     "https://www.linkedin.com/in/samuel-maucaille-54a63310b/",
   github: "https://github.com/maucaillesamuel02", // Add your personal GitHub URL
+  resume: "/resume.pdf",
 };

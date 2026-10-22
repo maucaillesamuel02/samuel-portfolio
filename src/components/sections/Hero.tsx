@@ -1,5 +1,5 @@
 import { personal } from "@/data/personal";
-import { MapPin } from "lucide-react";
+import { ExternalLink, FileText, MapPin } from "lucide-react";
 
 export default function Hero() {
   return (    
@@ -49,6 +49,19 @@ export default function Hero() {
         >
           Get in Touch
         </a>
+        
+        <a
+          href={personal.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Samuel Maucaille's résumé (PDF, opens in a new tab)"
+          className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-surface px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent"
+        >
+          <FileText size={17} aria-hidden="true" />
+          View Résumé (PDF)
+          <ExternalLink size={14} aria-hidden="true" />
+        </a>
+
       </div>  
           
     <div className="mt-8 flex flex-col items-start gap-3 text-sm text-muted sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
