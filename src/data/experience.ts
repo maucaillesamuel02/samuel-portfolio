@@ -1,4 +1,3 @@
-
 export type WorkExperience = {
   company: string;
   role: string;
