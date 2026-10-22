@@ -2,11 +2,12 @@ import { personal } from "@/data/personal";
 import { MapPin } from "lucide-react";
 
 export default function Hero() {
-  return (
-    <section
-      id="home"
-      className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl flex-col justify-center px-6 py-20"
-    >
+  return (    
+      <section
+        id="home"
+        className="mx-auto flex w-full min-w-0 max-w-6xl flex-col px-6 pt-16 md:pt-24"
+      >
+
       <p className="mb-5 font-mono text-sm text-accent">
         Hi, my name is
       </p>
@@ -48,22 +49,27 @@ export default function Hero() {
         >
           Get in Touch
         </a>
+      </div>  
+          
+    <div className="mt-8 flex flex-col items-start gap-3 text-sm text-muted sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
+      {/* Location */}
+      <div className="flex items-center gap-2">
+        <MapPin
+          size={16}
+          className="shrink-0 text-accent"
+        />
+        <span>{personal.location}</span>
       </div>
 
-        
-    <div className="mt-12 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-muted">
-        {/* Location */}
-        <div className="flex items-center gap-2">
-            <MapPin size={16} className="text-accent" />
-            <span>{personal.location}</span>
-        </div>
+      {/* Availability */}
+      <div className="flex min-w-0 items-start gap-2">
+        <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-emerald-400" />
 
-        {/* Availability */}
-        <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            <span>{personal.availability}</span>
-        </div>
-        </div>
+        <span className="min-w-0 break-words">
+          {personal.availability}
+        </span>
+      </div>
+    </div>
     </section>
   );
 }

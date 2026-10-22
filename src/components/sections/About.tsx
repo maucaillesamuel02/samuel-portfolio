@@ -1,4 +1,3 @@
-
 const highlights = [
   "Enterprise web and mobile development",
   "Backend APIs and cloud integrations",
@@ -7,10 +6,11 @@ const highlights = [
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="mx-auto max-w-6xl scroll-mt-24 px-6 py-24"
-    >
+      <section
+        id="about"
+        className="mx-auto w-full max-w-6xl scroll-mt-24 px-6"
+     >
+
       <div className="mb-10 flex items-center gap-4">
         <span className="font-mono text-sm text-accent">
           01.
@@ -21,9 +21,8 @@ export default function About() {
         <div className="h-px flex-1 bg-border" />
       </div>
 
-      <div className="grid gap-12 lg:grid-cols-2">
-        <div className="space-y-5 text-base leading-8 text-muted">
-          <p>
+    <div className="flex min-w-0 flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-12">
+        <div className="min-w-0 space-y-5 break-words text-base leading-8 text-muted">          <p>
             I&apos;m a Full Stack Software Engineer based in Lima,
             Peru, with experience developing enterprise web
             and mobile applications.
@@ -48,8 +47,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="rounded-xl border border-border bg-surface p-7">
-          <h3 className="mb-6 text-xl font-semibold text-foreground">
+<div className="min-w-0 rounded-xl border border-border bg-surface p-5 sm:p-7">          <h3 className="mb-6 text-xl font-semibold text-foreground">
             What I Bring
           </h3>
 

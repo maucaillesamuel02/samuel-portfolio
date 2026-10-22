@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
@@ -8,10 +9,12 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main>
-        <Hero />
-        <About />
-        <Experience />
+      <main className="w-full min-w-0">
+        <div className="flex w-full min-w-0 flex-col gap-16 pb-16 md:gap-24 md:pb-24">
+          <Hero />
+          <About />
+          <Experience />
+        </div>
       </main>
     </>
   );

@@ -1,4 +1,3 @@
-
 import { experiences } from "@/data/experience";
 import { BriefcaseBusiness } from "lucide-react";
 
@@ -6,8 +5,9 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="mx-auto max-w-6xl scroll-mt-24 px-6 py-24"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-6"
     >
+        
       <div className="mb-12 flex items-center gap-4">
         <span className="font-mono text-sm text-accent">
           02.
