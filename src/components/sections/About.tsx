@@ -45,6 +45,13 @@ export default function About() {
             new technologies, and collaborating with
             engineering teams to build reliable software.
           </p>
+
+          <p>
+            Outside of software development, I&apos;m passionate
+            about astronomy and enjoy swimming and calisthenics.
+            These interests keep me curious, active, and
+            motivated to continuously learn and challenge myself.
+          </p>
         </div>
 
 <div className="min-w-0 rounded-xl border border-border bg-surface p-5 sm:p-7">          <h3 className="mb-6 text-xl font-semibold text-foreground">

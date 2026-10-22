@@ -13,27 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://samuel-portfolio-omega-opal.vercel.app"
+  ),
+
   title: "Samuel Maucaille | Full Stack Software Engineer",
+
   description:
-    "Full Stack Software Engineer specializing in C#, .NET, React, and TypeScript. Experienced in enterprise software, REST APIs, and cloud integrations. Based in Peru and open to remote opportunities.",
-  keywords: [
-    "Samuel Maucaille",
-    "Full Stack Software Engineer",
-    ".NET Developer",
-    "C# Developer",
-    "React Developer",
-    "TypeScript",
-    "Backend Developer",
-    "Software Engineer Peru",
-    "Remote Software Engineer",
-  ],
+    "Full Stack Software Engineer specializing in C#, .NET, React, and TypeScript. Based in Peru and open to remote opportunities.",
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "Samuel Maucaille | Full Stack Software Engineer",
     description:
-      "Building reliable software with .NET, React, and TypeScript.",
+      "Building scalable software solutions with .NET, React, and TypeScript.",
+    url: "/",
+    siteName: "Samuel Maucaille Portfolio",
     type: "website",
     locale: "en_US",
   },
+
   robots: {
     index: true,
     follow: true,
