@@ -14,9 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://samuel-portfolio-omega-opal.vercel.app"
-  ),
+  metadataBase: new URL("https://samuelmaucaille.dev"),
 
   title: "Samuel Maucaille | Full Stack Software Engineer",
 
@@ -31,7 +29,7 @@ export const metadata: Metadata = {
     title: "Samuel Maucaille | Full Stack Software Engineer",
     description:
       "Building scalable software solutions with .NET, React, and TypeScript.",
-    url: "/",
+    url: "https://samuelmaucaille.dev",
     siteName: "Samuel Maucaille Portfolio",
     type: "website",
     locale: "en_US",
