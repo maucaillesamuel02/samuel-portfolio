@@ -11,16 +11,16 @@ export type Project = {
   featured: boolean;
 };
 
-export const projects: Project[] = [
+export const projects: Project[] = [    
   {
     slug: "elevate-by-nextep",
     title: "Elevate by Nextep",
     category: "Enterprise HR Platform",
     company: "Nextep",
     description:
-      " Elevate is an enterprise web and mobile platform developed by Nextep, a US-based HR technology company, supporting employee onboarding, workforce management, and HR services.",
+      "An enterprise HR platform developed by Nextep, a US-based company, supporting employee onboarding, workforce management, and HR services.",
     contribution:
-      "Contributed to full-stack development using C#, .NET, React, React Native, and TypeScript. Implemented employee onboarding, rehiring, and access management features, and supported integrations with Salesforce and PrismHR while collaborating with US-based engineering and QA teams.",
+      "Developed full-stack features using .NET, React, and TypeScript, including onboarding and rehiring workflows, access controls, and enterprise integrations. Collaborated with US-based engineering and QA teams.",
     technologies: [
       "C#",
       ".NET",
@@ -32,15 +32,16 @@ export const projects: Project[] = [
     website: "https://www.nextep.com/",
     featured: true,
   },
+
   {
     slug: "financial-planning",
     title: "Financial Planning Application",
     category: "Banking / Enterprise Software",
     company: "Formativa Perú",
     description:
-      "A financial planning web application supporting business workflows for a banking-sector client.",
+      "An enterprise financial planning application developed for a banking-sector client, supporting financial workflows, data consistency, and business planning processes.",
     contribution:
-      "Developed backend APIs and Angular components using .NET Core, Entity Framework, and SQL Server.",
+      "Developed REST APIs using .NET Core, Entity Framework, and SQL Server, alongside Angular frontend components. Applied modular architecture principles to support maintainability and future extensions.",
     technologies: [
       "C#",
       ".NET Core",
@@ -73,9 +74,9 @@ export const projects: Project[] = [
     title: "UP Nutrition",
     category: "E-commerce",
     description:
-      "An online store specializing in sports nutrition products and supplements.",
+      "An e-commerce platform for sports nutrition products, providing an online shopping experience for customers purchasing supplements and fitness-related products.",
     contribution:
-      "Customized Shopify theme sections, responsive layouts, and storefront functionality using Liquid, CSS, and JavaScript.",
+      "Customized Shopify storefront components using Liquid, CSS, and JavaScript. Developed responsive sections, improved product presentation, and managed theme changes using Git and GitHub.",
     technologies: [
       "Shopify",
       "Liquid",
